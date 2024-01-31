@@ -54,7 +54,7 @@ public class PlayerMovement : NetworkBehaviour
         if (d)
             input += Vector3.right;
 
-        transform.Translate(input * 0.01f, Space.World);
+        transform.Translate(input * 0.1f, Space.World);
     }
 
     [ServerRpc]
