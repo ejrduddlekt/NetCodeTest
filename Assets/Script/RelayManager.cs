@@ -54,6 +54,7 @@ public class RelayManager : MonoBehaviour
             IPv4Address = allocation.RelayServer.IpV4,
             Port = (ushort)allocation.RelayServer.Port,
             AllocationID = allocation.AllocationId,
+            AllocationIDByte = allocation.AllocationIdBytes,
             ConnectionData = allocation.ConnectionData,
             Key = allocation.Key,
         };

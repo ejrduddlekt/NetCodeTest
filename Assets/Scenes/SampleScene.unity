@@ -1234,7 +1234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Host: {fileID: 1828601339}
   Client: {fileID: 782628376}
-  InputField: {fileID: 2130667565}
+  inputField: {fileID: 2130667565}
 --- !u!1 &1527936371
 GameObject:
   m_ObjectHideFlags: 0

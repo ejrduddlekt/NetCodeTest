@@ -16,7 +16,7 @@ public class UiManager : MonoBehaviour
     {
         Host.onClick.AddListener(async () =>
         {
-            var data = await RelayManager.SetUpRelay(10, "NetCodeTest");
+            var data = await RelayManager.SetUpRelay(10, "production");
 
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(data.IPv4Address, data.Port, data.AllocationIDByte, data.Key, data.ConnectionData);
 
@@ -27,7 +27,7 @@ public class UiManager : MonoBehaviour
 
         Client.onClick.AddListener(async () =>
         {
-            var data = await RelayManager.JoinRelay(inputField.text, "NetCodeTest");
+            var data = await RelayManager.JoinRelay(inputField.text, "production");
 
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(data.IPv4Address, data.Port, data.AllocationIDByte, data.Key, data.ConnectionData, data.HostConnectionData);
 
